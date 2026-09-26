@@ -63,6 +63,7 @@ export default function Home({ onNavigate }: { onNavigate: (id: string) => void 
             <div className="link-row">
               <a href="https://www.linkedin.com/in/mutyala-naga-venkata-sai-jaswanth-7447b729" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={15} /></a>
               <a href="https://github.com/mutyalajaswanth" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={15} /></a>
+              <a href="https://portofolio-me-e4c6.vercel.app" target="_blank" rel="noreferrer">Live site <ExternalLink size={15} /></a>
             </div>
           </div>
           <div className="side-note"><span className="side-note-mark">✳</span><span>Making thoughtful things<br />for curious people.</span></div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowUpRight, Github, Linkedin, Menu, X } from "lucide-react";
+import { ArrowUpRight, ExternalLink, Github, Linkedin, Menu, X } from "lucide-react";
 import Home from "@/pages/Home";
 
 const navItems = [
@@ -36,7 +36,7 @@ export default function App() {
           {navItems.map(([label, id]) => (
             <button key={id} onClick={() => jump(id)}>{label}</button>
           ))}
-          <a className="nav-resume" href="mailto:jaswanthmutyala8@gmail.com?subject=Resume%20request">Request CV <ArrowUpRight size={14} /></a>
+          <a className="nav-resume" href="/Mutyala_Naga_Venkata_Sai_Jaswanth_CV.pdf" download="Mutyala_Naga_Venkata_Sai_Jaswanth_CV.pdf">Request CV <ArrowUpRight size={14} /></a>
         </nav>
         <button className="menu-toggle" onClick={() => setMenuOpen((open) => !open)} aria-label={menuOpen ? "Close menu" : "Open menu"}>
           {menuOpen ? <X size={21} /> : <Menu size={21} />}
@@ -52,6 +52,7 @@ export default function App() {
           <div className="footer-links">
             <a href="https://github.com/mutyalajaswanth" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={16} /></a>
             <a href="https://www.linkedin.com/in/mutyala-naga-venkata-sai-jaswanth-7447b729" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin size={16} /></a>
+            <a href="https://portofolio-me-e4c6.vercel.app" target="_blank" rel="noreferrer" aria-label="Live portfolio"><ExternalLink size={16} /></a>
           </div>
         </div>
       </footer>
